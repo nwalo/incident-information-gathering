@@ -18,18 +18,18 @@ Welcome to the culmination of efficiency and innovation: a Bash script, 'Automat
 
 The key features for this project comes with 3 executable files "incident , report.sh, and report-logs.sh
 
-- ** Incident Information Gathering (incident-information-gathering.sh) **
+- **Incident Information Gathering (incident-information-gathering.sh)**
  - The main executable that initializes the data collection process
  - Collection of volatile information.
  
-- ** Script to generate report (report.sh) **
+- **Script to generate report (report.sh)**
  - System Information
  - Network Interface 
  - Network Statistics
  - Processes Information
  - Routing Table
 
-- ** Script to generate report for log files (report-log.sh) **
+- **Script to generate report for log files (report-log.sh)**
  - Last Authorized Users
  - Last Failed Login Attempts
  - Who is logged in

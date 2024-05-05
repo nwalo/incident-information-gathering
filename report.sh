@@ -1,29 +1,32 @@
 #!/bin/bash
 
-echo start report
+echo "Report.txt generation started"
 
-echo Incident Investigator Report > report.txt
+mkdir -p reports   # Create the reports directory if it doesn't exist
 
-echo ===== Start Date and Time ===== >> report.txt
-date >> report.txt
+chmod +w reports
 
-echo ===== System Information ===== >> report.txt
-uname -a >> report.txt
+echo Incident Investigator Report > reports/report.txt
 
-echo ===== Network Interface ===== >> report.txt
-ifconfig -a >> report.txt
+echo ===== Start Date and Time ===== >> reports/report.txt
+date >> reports/report.txt
 
-echo ===== Network Statistics ===== >> report.txt
-netstat -ano >> report.txt
+echo ===== System Information ===== >> reports/report.txt
+uname -a >> reports/report.txt
 
-echo ===== Processes Information ===== >> report.txt
-ps -axu >> report.txt
+echo ===== Network Interface ===== >> reports/report.txt
+ifconfig -a >> reports/report.txt
 
-echo ===== Routing Table ===== >> report.txt
-route -n >> report.txt
+echo ===== Network Statistics ===== >> reports/report.txt
+netstat -ano >> reports/report.txt
 
-echo ===== End Date and Time ===== >> report.txt
-date >> report.txt
+echo ===== Processes Information ===== >> reports/report.txt
+ps -axu >> reports/report.txt
 
-echo you have successfully generated an incident report. 
-echo To access the file, open the report.txt
+echo ===== Routing Table ===== >> reports/report.txt
+route -n >> reports/report.txt
+
+echo ===== End Date and Time ===== >> reports/report.txt
+date >> reports/report.txt
+
+echo "Report.txt generation completed"
